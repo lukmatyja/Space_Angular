@@ -1,0 +1,3 @@
+<div #outerDiv class="container" (mousemove)="update($event.layerX, $event.layerY, outerDiv)">
+  <div class="planet" [style.margin-left.px]="position.x" [style.margin-top.px]="position.y" [style.opacity]="currentOpacity()"></div>
+</div>

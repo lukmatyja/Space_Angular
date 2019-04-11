@@ -1,0 +1,14 @@
+.container {
+  width:600px; /* or whatever width you want. */
+  height: 600px;
+  background-color: black;
+  margin:20px;
+}
+
+.planet{
+  width:20px; /* or whatever width you want. */
+  height:20px; /* or whatever width you want. */
+   display: inline-block;
+  background-color: white;
+  opacity: 1;
+}

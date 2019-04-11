@@ -1,0 +1,16 @@
+{
+  "pilots": [
+    {
+      "id": 1,
+      "firstName": "Katie",
+      "lastName": "Holmes",
+      "imageUrl": "/assets/images/pilot1.png"
+    },
+    {
+      "id": 2,
+      "firstName": "Agnes",
+      "lastName": "Holmes",
+      "imageUrl": "/assets/images/pilot1.png"
+    }
+  ]
+}
