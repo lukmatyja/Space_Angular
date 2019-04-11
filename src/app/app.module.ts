@@ -8,10 +8,12 @@ import { AppComponent } from './app.component';
 import { A2sCommModule } from 'a2s-comm';
 
 import { HttpClientModule  } from '@angular/common/http';
+import { BlackHoleComponent } from './black-hole/black-hole.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BlackHoleComponent
   ],
   imports: [
     BrowserModule,

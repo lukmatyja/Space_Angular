@@ -11,6 +11,6 @@ export abstract class SpaceShip {
   imageUrl: string;
   health = 100;
   activeShields = true;
-  activeWeapons = true;
+  activeWeapons = false;
   pilot: Pilot;
 }

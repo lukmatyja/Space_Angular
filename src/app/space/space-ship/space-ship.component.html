@@ -1,8 +1,8 @@
 <div>
   <h4>{{ spaceShip.modelName }}</h4>
   <div class="images">
-    <img [src]="spaceShip.imageUrl" />
-    <img
+    <img appSpaceImage [src]="spaceShip.imageUrl" />
+    <img appSpaceImage
       class="pilot"
       *ngIf="spaceShip.pilot"
       [src]="spaceShip.pilot.imageUrl"
@@ -14,10 +14,10 @@
 </div>
 <div>
   <div class="property" [class.active]="spaceShip.activeShields">
-    SHIELDS
+    {{ spaceShip.activeShields | tickize }} SHIELDS
   </div>
   <div class="property" [class.active]="spaceShip.activeWeapons">
-    WEAPONS
+    {{ spaceShip.activeWeapons | tickize }} WEAPONS
   </div>
   <div class="actions">
       <ng-content></ng-content>
