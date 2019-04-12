@@ -21,7 +21,7 @@ export class PilotRoomComponent implements OnInit {
   ngOnInit() {
     this.pilotService
     .getPilots()
-    .subscribe((pilots) => this.pilots = pilots, resp => console.error(resp.error));
+    .subscribe((pilots) => this.pilots = pilots, resp => window.alert(resp.error));
   }
 
   select(pilot: Pilot): void {

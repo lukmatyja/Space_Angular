@@ -1,3 +1,14 @@
-<p>
-  destruction-room works!
-</p>
+<h1>Destruction Room</h1>
+
+<div class="control-group">
+  <label class="control-label">Statek:</label>
+  <select name="shipIndex" [(ngModel)]="selectedShipIndex">
+    <option [value]="null">Wybierz statek</option>
+    <option *ngFor="let ship of spaceShips | async; index as i" [value]="i">
+      {{i+1}}. {{ship.modelName}}
+    </option>
+  </select>
+</div>
+<div class="control-group">
+  <button (click)="orderDestruction()" [disabled]="selectedShipIndex === null">Utylizuj</button>
+</div>

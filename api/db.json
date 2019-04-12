@@ -12,5 +12,16 @@
       "lastName": "Holmes",
       "imageUrl": "/assets/images/pilot1.png"
     }
+  ],
+  "forbidden-names": [
+    {
+      "name": "Maruda"
+    },
+    {
+      "name": "Ciamajda"
+    },
+    {
+      "name": "Gapcio"
+    }
   ]
 }
